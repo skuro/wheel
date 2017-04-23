@@ -378,12 +378,6 @@
   [aggregate]
   (::new-events aggregate))
 
-(defn aggregate?
-  "Test that `obj` is an aggregate."
-  [obj]
-  (boolean (and (::id obj)
-                (::type obj))))
-
 (defn empty
   "Create a new aggregate with id `aggregate-id` and no
   events. Aggregate version will be -1. Note that empty aggregates
